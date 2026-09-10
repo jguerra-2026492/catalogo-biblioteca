@@ -44,6 +44,22 @@
     nbproject/build-impl.xml file. 
 
 
+    Este proyecto separa el codigo Java (src/main/java) de los recursos
+    JavaFX -fxml, css, imagenes- (src/main/resources), al estilo Maven.
+    NetBeans/Ant solo conoce de forma nativa un unico src.dir (los .java),
+    asi que aqui copiamos src/main/resources dentro de build/classes
+    despues de cada compilacion, para que terminen en el classpath en la
+    raiz (ej: /view/Login.fxml, /css/biblioteca.css) y FXMLLoader los
+    encuentre en tiempo de ejecucion igual que si fueran resources de Maven.
+-->
+    <target name="-post-compile">
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.resources.dir}" excludes="**/.gitkeep"/>
+        </copy>
+    </target>
+    <!--
+
+
     Another way to customize the build is by overriding existing main targets.
     The targets of interest are: 
 

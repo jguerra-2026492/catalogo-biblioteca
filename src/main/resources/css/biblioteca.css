@@ -1,0 +1,139 @@
+/*
+ * Identidad visual: Biblioteca Universitaria
+ * Paleta academica: azul marino (#14264A), dorado (#C9A227), crema (#F5F1E8)
+ * Tipografia serif (Georgia) para transmitir tradicion y confianza academica.
+ */
+
+.root {
+    -fx-font-family: "Georgia", "Times New Roman", serif;
+    -fx-background-color: #F5F1E8;
+}
+
+.titulo-app {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #14264A;
+}
+
+.subtitulo-app {
+    -fx-font-size: 13px;
+    -fx-text-fill: #6B5B33;
+    -fx-font-style: italic;
+}
+
+.etiqueta-form {
+    -fx-font-size: 12px;
+    -fx-text-fill: #14264A;
+    -fx-font-weight: bold;
+}
+
+.mensaje-error {
+    -fx-text-fill: #A02334;
+    -fx-font-size: 12px;
+}
+
+.login-pane, .menu-pane {
+    -fx-background-color: linear-gradient(to bottom, #F5F1E8, #E9E2CE);
+}
+
+.gestion-pane {
+    -fx-background-color: #F5F1E8;
+}
+
+.panel-formulario {
+    -fx-background-color: #EFE9D8;
+    -fx-border-color: #C9A227;
+    -fx-border-width: 0 2 0 0;
+}
+
+.text-field, .password-field {
+    -fx-background-color: white;
+    -fx-border-color: #B7A76B;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 6 8 6 8;
+    -fx-font-family: "Georgia", serif;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #14264A;
+}
+
+.button {
+    -fx-background-radius: 4;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+    -fx-padding: 8 16 8 16;
+    -fx-font-family: "Georgia", serif;
+}
+
+.boton-primario {
+    -fx-background-color: #14264A;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.boton-primario:hover {
+    -fx-background-color: #1F3A6E;
+}
+
+.boton-secundario {
+    -fx-background-color: #C9A227;
+    -fx-text-fill: #14264A;
+    -fx-font-weight: bold;
+}
+.boton-secundario:hover {
+    -fx-background-color: #DDB94B;
+}
+
+.boton-peligro {
+    -fx-background-color: #A02334;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.boton-peligro:hover {
+    -fx-background-color: #C22B3E;
+}
+
+.boton-link {
+    -fx-background-color: transparent;
+    -fx-text-fill: #14264A;
+    -fx-underline: true;
+    -fx-font-size: 11px;
+}
+.boton-link:hover {
+    -fx-text-fill: #6B5B33;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #C9A227;
+    -fx-border-width: 1;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #14264A;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-row-cell {
+    -fx-font-size: 12px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #F5F1E8;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #C9A227;
+    -fx-text-fill: #14264A;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #14264A;
+}
